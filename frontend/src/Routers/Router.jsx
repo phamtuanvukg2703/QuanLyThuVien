@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "../Pages/Header/Navbar";
 import NoPage from "../Pages/Center/NoPage";
