@@ -8,8 +8,10 @@ const Navbar = () => {
         setChaneLogin(!ChaneLogin);
     }
     return (
-        <>
-            <div className="w-screen h-12 bg-blue-400 flex items-center justify-around">
+        <div >
+
+            <div className="w-screen  h-12 bg-blue-400 flex items-center justify-around ">
+
                 <div className="uppercase font-bold flex-none text-white text-xl">
                     thư viện online
                 </div>
@@ -30,18 +32,19 @@ const Navbar = () => {
                         </button>
                     </div>
                 </div>
-                <button onClick={handLogin} className="bg-white rounded-lg shadow-inner shadow-xl p-1 flex-none " style={{ textAlign: 'center' }}>
+                <button onClick={handLogin} className="bg-white rounded-lg shadow-xl p-1 flex-none " style={{ textAlign: 'center' }}>
                     Đăng nhập
                 </button>
 
-                {
-                    (ChaneLogin == true) && (
-                        <Login />
-                    )
-                }
-
             </div>
-        </>
+            {
+                (ChaneLogin == true) && (
+
+                        <Login />
+                )
+            }
+        </div>
+
     );
 }
 
